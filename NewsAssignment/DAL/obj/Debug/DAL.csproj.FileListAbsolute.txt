@@ -1,0 +1,10 @@
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\DAL\bin\Debug\DAL.dll.config
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\DAL\bin\Debug\DAL.dll
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\DAL\bin\Debug\DAL.pdb
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\DAL\bin\Debug\EntityFramework.dll
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\DAL\bin\Debug\EntityFramework.xml
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\DAL\obj\Debug\DAL.dll
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\DAL\obj\Debug\DAL.pdb

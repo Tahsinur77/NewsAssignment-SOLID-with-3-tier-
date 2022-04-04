@@ -22,5 +22,10 @@ namespace DAL
         {
             return new NewsRepo(db);
         }
+
+        public static ISocial<NewsDetail,int,int> NewsSocialAccess()
+        {
+            return new NewsRepo(db);
+        }
     }
 }

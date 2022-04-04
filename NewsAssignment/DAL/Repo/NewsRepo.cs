@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repo
 {
-    public class NewsRepo:IRepository<News,int>,ISearch<News>
+    public class NewsRepo:IRepository<News,int>,ISearch<News>,ISocial<NewsDetail,int,int>
     {
         private NewsApiEntities db;
 
@@ -23,6 +23,8 @@ namespace DAL.Repo
             if (db.SaveChanges() != 0) return true;
             return false;
         }
+
+        
 
         public bool Delete(int id)
         {
@@ -76,6 +78,46 @@ namespace DAL.Repo
                             select x).ToList();
                 return list;
             }
+        }
+        public bool AddComment(string comment,int newsId, int userId)
+        {
+            NewsDetail newsDetails = new NewsDetail();
+            newsDetails.NewsId = newsId;
+            newsDetails.UserId = userId;
+            newsDetails.React = null;
+            newsDetails.Comment = comment;
+            db.NewsDetails.Add(newsDetails);
+            if (db.SaveChanges() != 0) return true;
+            return false;
+            
+        }
+
+        public bool AddReact(int react,int newsId, int userId)
+        {
+            NewsDetail newsDetails = new NewsDetail();
+            newsDetails.NewsId = newsId;
+            newsDetails.UserId = userId;
+            newsDetails.React = react;
+            newsDetails.Comment = null;
+            db.NewsDetails.Add(newsDetails);
+            if (db.SaveChanges() != 0) return true;
+            return false;
+        }
+
+        public List<NewsDetail> GetComment(int id1)
+        {
+            var newsdetails = (from x in db.NewsDetails
+                               where x.NewsId.Equals(id1)
+                               select x).ToList();
+            return newsdetails;
+        }
+
+        public List<NewsDetail> GetReact(int id1)
+        {
+            var newsdetails = (from x in db.NewsDetails
+                               where x.NewsId.Equals(id1)
+                               select x).ToList();
+            return newsdetails;
         }
     }
 }

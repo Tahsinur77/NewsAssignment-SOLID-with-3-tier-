@@ -1,0 +1,14 @@
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\BLL\bin\Debug\BLL.dll
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\BLL\bin\Debug\BLL.pdb
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\BLL\bin\Debug\AutoMapper.dll
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\BLL\bin\Debug\DAL.dll
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\BLL\bin\Debug\EntityFramework.dll
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\BLL\bin\Debug\DAL.pdb
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\BLL\bin\Debug\DAL.dll.config
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\BLL\bin\Debug\AutoMapper.xml
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\BLL\bin\Debug\EntityFramework.xml
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\BLL\obj\Debug\BLL.dll
+D:\11Semester\NewsAssignment-SOLID-with-3-tier-\NewsAssignment\BLL\obj\Debug\BLL.pdb
