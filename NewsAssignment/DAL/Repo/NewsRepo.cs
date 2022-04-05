@@ -59,14 +59,14 @@ namespace DAL.Repo
             if(category == "" || category == null)
             {
                 var list = (from x in db.News
-                            where x.Category.Equals(category)
+                            where x.Date.Equals(date)
                             select x).ToList();
                 return list;
             }
             else if(date == "" || date == null)
             {
                 var list = (from x in db.News
-                            where x.Date.Equals(date)
+                            where x.Category.Equals(category)
                             select x).ToList();
                 return list;
             }
@@ -108,6 +108,7 @@ namespace DAL.Repo
         {
             var newsdetails = (from x in db.NewsDetails
                                where x.NewsId.Equals(id1)
+                               && x.Comment != null
                                select x).ToList();
             return newsdetails;
         }
@@ -116,6 +117,7 @@ namespace DAL.Repo
         {
             var newsdetails = (from x in db.NewsDetails
                                where x.NewsId.Equals(id1)
+                               && x.React != null
                                select x).ToList();
             return newsdetails;
         }

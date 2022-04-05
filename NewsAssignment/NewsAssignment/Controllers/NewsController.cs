@@ -63,5 +63,47 @@ namespace NewsAssignment.Controllers
             else return Request.CreateResponse(HttpStatusCode.OK, "Not Delete");
         }
 
+        [Route("api/News/Search")]
+        [HttpPost]
+        public HttpResponseMessage Search(string category,string date)
+        {
+            var searchList = NewsService.Search(category,date);
+            return Request.CreateResponse(HttpStatusCode.OK, searchList);
+        }
+
+        [Route("api/News/Comment")]
+        [HttpPost]
+        public HttpResponseMessage AddComment(string comment, int newsId, int userId)
+        {
+            var flag = NewsService.AddComment(comment, newsId, userId);
+            if(flag) return Request.CreateResponse(HttpStatusCode.OK, "Comment Added");
+            return Request.CreateResponse(HttpStatusCode.OK, "Comment not added");
+        }
+
+        [Route("api/News/React")]
+        [HttpPost]
+        public HttpResponseMessage AddReact(int react, int newsId, int userId)
+        {
+            var flag = NewsService.AddReact(react, newsId, userId);
+            if (flag) return Request.CreateResponse(HttpStatusCode.OK, "React Added");
+            return Request.CreateResponse(HttpStatusCode.OK, "React not added");
+        }
+
+        [Route("api/News/GetComment/{id}")]
+        [HttpGet]
+        public HttpResponseMessage GetComment(int id)
+        {
+            var comment = NewsService.GetCommnet(id);
+            return Request.CreateResponse(HttpStatusCode.OK, comment);
+        }
+
+        [Route("api/News/GetReact/{id}")]
+        [HttpGet]
+        public HttpResponseMessage GetReact(int id)
+        {
+            var react = NewsService.GetReact(id);
+            return Request.CreateResponse(HttpStatusCode.OK, react);
+        }
+
     }
 }
